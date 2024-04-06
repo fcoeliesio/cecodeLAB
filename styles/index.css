@@ -6,5 +6,50 @@
 
 header {
   background-color: #ffffff;
-  box-shadow: 0px 3px 10px #464646;
+  box-shadow: 0px 2px 8px #464646;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-menu-item {
+  margin: 0px 16px;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.login-btn button {
+  border: none;
+  background-color: aquamarine;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.login-btn button a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
