@@ -147,6 +147,18 @@ header {
 .text-form-sac > p:first-child {
   font-weight: bold;
 }
+ooter {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  flex-shrink: 0;
+  background: #F7F7F9;
+  justify-content: center;
+  align-items: center;
+}
+.message-footer {
+  text-align: center;
+}
 
 
 
