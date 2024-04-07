@@ -78,6 +78,7 @@ header {
   font-size: 1.1rem;
 }
 
+/* O menu mobile não aparece */
 .mobile-menu-icon {
   display: none;
 }
@@ -86,34 +87,25 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 640px){
-  .nav-menu {
-    padding: 1.5rem 4rem;
-  }
-
-  .nav-menu-item {
+@media screen and (max-width: 640px) {
+  .nav-menu, .login-btn {
     display: none;
-  }
-
-  .login-btn {
-    display: none;
-  }
-  
-  .login-btn-mobile {
-    display: block;
   }
   
   .mobile-menu-icon {
     display: block;
   }
+
   .mobile-menu-icon button {
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
-  .menu-mobile {
-    display: block;
+
+  .menu-mobile .login-btn button {
+    width: 100%;
   }
+
   .menu-mobile ul {
     display: flex;
     flex-direction: column;
@@ -121,13 +113,6 @@ header {
     padding-bottom: 1rem;
   }
 
-  .menu-mobile .nav-menu-item {
-    display: block;
-    padding: 1rem 2rem;
-  }
-  .menu-mobile .login-btn button {
-    width: 100%;
-  }
   .open {
     display: block;
   }
