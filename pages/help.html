@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/help.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="name-cecode">CE/CODE</div>
+            <div class="name-lab">LAB</div>
+        </div>
+    </header>
+    <main>
+        <h1><p class="Contato">Contato</p></h1>
+        <h2><p class="Dados">Seus Dados</p></h2>
+        <form class="Help-form" action="#" method="post">
+            <div class="help-data">
+                <select class="form-control">
+                    <option value="">Assunto *</option>
+                    <option value="Reclamações">Reclamações</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Duvidas">Duvidas</option>
+                    <option value="Elogios">Elogios</option>
+                </select>
+                <select class="form-atividade">
+                    <option value="">Atividade *</option>
+                    <option value="Colaborador">Colaborador</option>
+                    <option value="Publico-externo">Publico Externo</option>
+                    <option value="Clientes">Clientes</option>
+                    <option value="Parceiros">Parceiros</option>
+                </select>
+                <input type="text" name="name" class="data-name" placeholder="Nome" required>
+                <input type="email" name="email" class="data-email" placeholder="Email" required>
+                <input type="text" name="endereco" class="data-endereco" placeholder="Endereço" required>
+                <input type="text" name="bairro" class="data-bairro" placeholder="Bairro" required>
+                <input type="text" name="cidade" class="data-cidade" placeholder="Cidade" required>
+                <input type="text" name="estado" class="data-estado" placeholder="Estado" required>
+                <input type="text" name="cep" class="data-cep" placeholder="Cep" required>
+                <input type="tel" name="telefone" class="data-telefone" placeholder="Telefone" required>
+                <input type="tel" name="celular" class="data-celular" placeholder="Celular" required>
+                <input type="text" name="comentario" class="data-comentario" placeholder="Comentario" required>
+            </div>
+            <div class="informações-help">
+                <p>Seja bem-vindo ao Fale Conosco da CE/CODE LAB - Serviço de Atendimento ao Consumidor.</p>
+                <p>Informamos que só poderemos iniciar o contato e registrar sua solicitação após o preenchimento do formulário.</p>
+                <p>Em cumprimento à Lei 13.709/2018 (LGPD) todos os dados fornecidos serão mantidos sob sigilo e protegidos por esta empresa, e poderão ser compartilhados para a condução do seu atendimento ou quando solicitado pelas Autoridades Públicas de saúde.</p>
+            </div>
+            <div class="form-enviar">
+                <input type="checkbox" id="concordo" required>
+                <label for="concordo" id="concordo">Ao prosseguir com o envio deste formulário, fica consentido o fornecimento de seus dados pessoais de acordo com os esclarecimentos anteriormente prestados.</label>
+                <button type="submit" class="button-form">Enviar</button>
+            </div>
+            <div class="form-sac">
+                <h3><p id="sac">SAC</p></h3>
+                <img src="../assets/icons/icon_help_sac.svg" alt="nunber-sac">
+                <p>A CE/CODE LAB faz questão de ouvir a sua opinião.</p>
+                <p>Por isso, disponibiliza uma equipe para atendê-lo(a).</p>
+                <p>O atendimento é realizado de segunda a sexta-feira, das 9h às 17h (exceto feriados).</p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
