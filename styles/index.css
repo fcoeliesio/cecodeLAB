@@ -119,13 +119,13 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
   .nav-menu, .login-btn {
     display: none;
   }
   
   .mobile-menu-icon {
-    display: block;
+    display: flex;
   }
 
   .mobile-menu-icon button {
