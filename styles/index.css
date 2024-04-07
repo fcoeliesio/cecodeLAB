@@ -77,3 +77,58 @@ header {
   font-weight: 500;
   font-size: 1.1rem;
 }
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 640px){
+  .nav-menu {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-menu-item {
+    display: none;
+  }
+
+  .login-btn {
+    display: none;
+  }
+  
+  .login-btn-mobile {
+    display: block;
+  }
+  
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .menu-mobile .nav-menu-item {
+    display: block;
+    padding: 1rem 2rem;
+  }
+  .menu-mobile .login-btn button {
+    width: 100%;
+  }
+  .open {
+    display: block;
+  }
+}
