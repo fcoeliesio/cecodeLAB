@@ -67,7 +67,7 @@ header {
 
 .login-btn button {
   border: none;
-  background-color: aquamarine;
+  background-color: rgb(167, 196, 174);
   padding: 10px 15px;
   border-radius: 8px;
 }
@@ -107,10 +107,34 @@ header {
   }
 
   .menu-mobile ul {
+    list-style: none;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
+  }
+
+  .nav-menu-item {
+    padding: 10px;
+  }
+
+  .login-btn-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-btn-mobile button {
+    border: none;
+    width: 100%;
+    background-color: rgb(167, 196, 174);
+    padding: 10px 15px;
+  }
+
+  .login-btn-mobile button a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
   }
 
   .open {
