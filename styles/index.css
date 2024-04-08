@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 4px #464646;
+}
+
+main {
+  display: flex;
+  height: 80vh;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.name-cecode a {
+  color: #1B71A3;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.name-lab a {
+  color: #1B71A3;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-left: 4px;
+}
+
+.name-cecode a, .name-lab a {
+  text-decoration: none;
+}
+
+.name-cecode a:hover, .name-lab a:hover {
+  color: #1B71A3;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-menu-item {
+  margin: 0px 16px;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #1B71A3;
+}
+
+.menu-mobile:hover {
+  border: #1B71A3;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn button {
+  background-color: #1B71A3;
+  border: none;
+  height: 126%;
+  padding: 12px 16px;
+}
+
+.login-btn button a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  box-shadow: 4px 2px 3px 3px #464646;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* O menu mobile não aparece */
+.mobile-menu-icon {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-menu, .login-btn {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-mobile .login-btn button {
+    width: 100%;
+  }
+
+  .menu-mobile ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .nav-menu-item {
+    padding: 10px;
+  }
+
+  .login-btn-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-btn-mobile button {
+    border: none;
+    width: 100%;
+    background-color: rgb(84, 188, 202);
+    padding: 10px 15px;
+  }
+
+  .login-btn-mobile button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .open {
+    display: block;
+  }
+}
