@@ -9,7 +9,6 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
-
 }
 
 main {
@@ -97,7 +96,7 @@ span {
   height: 40px;
   flex-shrink: 0;
   border-radius: 8px;
-  border: 1px solid #9A9A9A;
+  border: 1px solid #1B71A3;
   align-items: center;
 }
 
@@ -111,9 +110,10 @@ span {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: var(--Brand-Brand-700, #1D4ED8);
+  background: var(--Brand-Brand-700, #1B71A3);
   color: white;
   margin: 24px 0px 24px 0px;
+  font-size: 16px;
 }
 
 .user-help {
@@ -124,6 +124,11 @@ span {
 
 .link-help {
   list-style-type: none;
+}
+
+.link-help a, .back a {
+  text-decoration: underline;
+  color: #1B71A3;
 }
 
 .user-help li {
@@ -149,4 +154,4 @@ footer {
 
 .message-footer {
   text-align: center;
-}
+} 
