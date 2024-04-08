@@ -1,0 +1,95 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+  }
+body {
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+main {
+    width: 100%;
+  }
+header {
+    background: #1B71A3;
+    padding: 20px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.name-cecode {
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+.name-lab {
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    margin-left: 8px;
+  }
+.button-voltar {
+  text-align: left; 
+  margin-left: 2%; 
+}
+.sobre{
+  background-color: #1B71A3;
+}
+#a-sobre {
+  color: white;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: justify;
+  margin: 2%;
+}
+.sobre-p {
+  color: white;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: justify;
+  margin: 2%;
+}
+.objetivo {
+  color:#1B71A3;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: justify;
+  margin: 2%;
+}
+.funcoes{
+  color:#1B71A3;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: justify;
+  margin: 2%;
+}
+.beneficios {
+  color:#1B71A3;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: justify;
+  margin: 2%;
+}
