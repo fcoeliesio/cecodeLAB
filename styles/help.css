@@ -78,8 +78,16 @@ header {
   box-sizing: border-box; 
   width: 80%; 
 }
-.Help-form .help-data .data-comentario {
-  height: 200px;
+#data-comentario {
+  width: 80%; 
+  height: 200px; 
+  padding: 20px; 
+  font-size: 16px; 
+  border: 1px solid #9A9A9A; 
+  border-radius: 8px; 
+  box-sizing: border-box; 
+  vertical-align: middle;
+  resize: none;
 }
 .Help-form .help-data select {
   width: 80%;
