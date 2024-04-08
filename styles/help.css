@@ -40,6 +40,10 @@ header {
     line-height: normal;
     margin-left: 8px;
   }
+.button-voltar {
+  text-align: left; 
+  margin-left: 10%; 
+}
 .ajuda {
     color:#1B71A3;
     text-align: center;
