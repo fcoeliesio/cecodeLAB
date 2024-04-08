@@ -15,6 +15,11 @@ header {
   box-shadow: 0px 1px 4px #464646;
 }
 
+main {
+  display: flex;
+  height: 80vh;
+}
+
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -75,6 +80,10 @@ header {
   color: #1B71A3;
 }
 
+.menu-mobile:hover {
+  border: #1B71A3;
+}
+
 .login-btn {
   display: flex;
   align-items: center;
@@ -92,10 +101,6 @@ header {
   font-weight: 500;
   font-size: 1.1rem;
   color: white;
-}
-
-main {
-  height: 800px;
 }
 
 footer {
