@@ -127,6 +127,38 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .name-cecode a {
+    color: #1B71A3;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+
+  .name-lab a {
+    color: #1B71A3;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 50;
+    line-height: normal;
+    margin-left: 2px;
+  }
+
+  .name-cecode a, .name-lab a {
+    text-decoration: none;
+  }
+
+  .name-cecode a:hover, .name-lab a:hover {
+    color: #1B71A3;
+  }
+
   .nav-menu, .login-btn {
     display: none;
   }
