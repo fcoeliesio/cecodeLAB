@@ -71,6 +71,7 @@ header {
 .help-data {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
 }
@@ -92,13 +93,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 .fieldset-form div {
   display: flex;
   flex-direction: column;
-  flex-grow: 2;
+  width: 49%;
 }
 
 .form-select,
@@ -207,9 +208,21 @@ footer {
   padding-bottom: 24px;
 }
 
+.input-error {
+  display: none;
+  font-size: .9rem;
+  color: red;
+}
+
 @media (max-width: 767px) {
   .fieldset-form, #select-issue, .content-footer, .copyright, .logo{
     flex-direction: column;
+  }
+  .fieldset-form {
+    gap: 1rem;
+  }
+  .fieldset-form div {
+    width: 100%;
   }
   .form-select{
     width: 100%;
