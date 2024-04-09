@@ -44,17 +44,27 @@ header {
   text-align: left; 
   margin-left: 2%; 
 }
-#a-sobre {
+.sobre {
+  display: flex;
+  align-items: center;
+}
+.imagem_laboratorio {
+  float: right;
+}
+.imagem_laboratorio img {
+  height: auto;
+}
+.sobre h1 {
   color:#1B71A3;
   font-family: Inter;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  text-align: justify;
+  text-align: center;
   margin: 2%;
 }
 .sobre-p {
-  color: rgb(83, 83, 83);
+  color: rgb(66, 66, 66);
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -63,22 +73,27 @@ header {
   text-align: justify;
   margin: 2%;
 }
-.imagem_laboratorio {
+.mvv {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  align-items: center;
 }
-#title-mvv{
+.imagem_mvv {
+  float:left;
+}
+.imagem_mvv img {
+  height: auto;
+}
+.mvv h2 {
   color:#1B71A3;
   font-family: Inter;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  text-align: justify;
+  text-align: center;
   margin: 2%;
 }
-.missao{
-  color:rgb(83, 83, 83);
+.mvv h3 {
+  color:black;
   font-family: Inter;
   font-style: normal;
   font-weight: 100;
@@ -86,53 +101,84 @@ header {
   text-align: justify;
   margin: 2%;
 }
-.visao{
-  color:rgb(83, 83, 83);
+.mvv p {
+  color: rgb(66, 66, 66);
   font-family: Inter;
+  font-size: 15px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
   text-align: justify;
   margin: 2%;
 }
-.valor ul {
-  list-style-position: outside;
-  padding-left: 2%; 
-  margin-top: 0; 
-}
-.valor ul li {
-  list-style-type: disc;
-  margin-bottom: 0.5em; 
-}
-.valor{
-  color:rgb(83, 83, 83);
+.mvv li {
+  color: rgb(66, 66, 66);
   font-family: Inter;
+  font-size: 15px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
   text-align: justify;
   margin: 2%;
+  list-style: none;
 }
-.imagem_mvv {
+.funcoes {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  align-items: center;
 }
-.funcoes{
-  color:rgb(83, 83, 83);
+.imagem_funcao {
+  float:left;
+}
+.imagem_funcao img {
+  height: auto;
+}
+.funcoes h2 {
+  color:#1B71A3;
   font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  margin: 2%;
+}
+.funcoes li {
+  color: rgb(66, 66, 66);
+  font-family: Inter;
+  font-size: 15px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
   text-align: justify;
   margin: 2%;
+  list-style: none;
 }
 .beneficios {
-  color:rgb(83, 83, 83);
+  display: flex;
+  align-items: center;
+}
+.imagem_beneficio {
+  float:left;
+}
+.imagem_beneficio img {
+  height: auto;
+}
+.beneficios h2 {
+  color:#1B71A3;
   font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  margin: 2%;
+}
+.beneficios li {
+  color: rgb(66, 66, 66);
+  font-family: Inter;
+  font-size: 15px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
   text-align: justify;
   margin: 2%;
+  list-style: none;
 }
