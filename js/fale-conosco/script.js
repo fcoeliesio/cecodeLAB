@@ -5,6 +5,7 @@ const selects = document.querySelectorAll(".form-select");
 inputs.forEach(input => input.addEventListener("focusout", (e) => validarInput(e)));
 selects.forEach(select => select.addEventListener("focusout", (e) => validarSelect(e)));
 const botaoSubmit = document.querySelector(".button-form");
+const form = document.querySelector("form");
 
 function validarInput(e) {
     const campo = e.target;
@@ -35,4 +36,14 @@ function validarSelect(e) {
         botaoSubmit.disabled = false;
     }
 }
+
+botaoSubmit.addEventListener("click", (e) => {
+    e.preventDefault();
+    const formValido = form.checkValidity();
+    if(!formValido) {
+        form.reportValidity();
+    } else {
+        alert("Obrigado por compartilhar a sua dúvida. Entraremos em contato em beve através do e-mail fornecido.");
+    }
+})
 
