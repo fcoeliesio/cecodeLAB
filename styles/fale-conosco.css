@@ -222,18 +222,18 @@ footer {
   color: red;
 }
 
+@media (max-width: 900px) {
+  .fieldset-form div, .form-select {
+    width: 100%;
+  } 
+}
+
 @media (max-width: 767px) {
   .fieldset-form, .content-footer, .copyright, .logo{
     flex-direction: column;
   }
   .fieldset-form {
     gap: 1rem;
-  }
-  .fieldset-form div {
-    width: 100%;
-  }
-  .form-select{
-    width: 100%;
   }
   .content-footer {
     gap: 2.5rem;

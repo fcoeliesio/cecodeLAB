@@ -6,6 +6,7 @@ inputs.forEach(input => input.addEventListener("focusout", (e) => validarInput(e
 selects.forEach(select => select.addEventListener("focusout", (e) => validarSelect(e)));
 const botaoSubmit = document.querySelector(".button-form");
 const form = document.querySelector("form");
+const concordoCheck = document.getElementById('concordo');
 
 function validarInput(e) {
     const campo = e.target;
@@ -15,11 +16,9 @@ function validarInput(e) {
     if(!campoValido) {
         mensagemErro.style.display = "block";
         campo.style.borderColor = "red";
-        botaoSubmit.disabled = true;
     } else {
         mensagemErro.style.display = "none";
         campo.style.borderColor = "#9a9a9a";
-        botaoSubmit.disabled = false;
     }
 }
 
@@ -29,21 +28,35 @@ function validarSelect(e) {
     if(select.value.trim().length === 0){
         mensagemErro.style.display = "block";
         select.style.borderColor = "red";
-        botaoSubmit.disabled = true;
     } else {
         mensagemErro.style.display = "none";
         select.style.borderColor = "#9a9a9a";
-        botaoSubmit.disabled = false;
     }
 }
 
-botaoSubmit.addEventListener("click", (e) => {
-    e.preventDefault();
-    const formValido = form.checkValidity();
-    if(!formValido) {
-        form.reportValidity();
+form.addEventListener("change", () => {
+    if(form.checkValidity()) {
+        concordoCheck.disabled = false;
     } else {
-        alert("Obrigado por compartilhar a sua dúvida. Entraremos em contato em beve através do e-mail fornecido.");
+        concordoCheck.disabled = true;
     }
 })
 
+form.addEventListener("reset", () => {
+    botaoSubmit.disabled = true;
+    concordoCheck.disabled = true;
+})
+
+concordoCheck.addEventListener('change', (e) => {
+    if(concordoCheck.checked){
+        botaoSubmit.disabled = false;
+    } else {
+        botaoSubmit.disabled = true;
+    }
+})
+
+botaoSubmit.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("Obrigado por compartilhar a sua dúvida. Entraremos em contato em beve através do e-mail fornecido.");
+    form.reset();
+})

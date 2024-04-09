@@ -15,7 +15,7 @@ function validarNome(nome) {
 }
 
 function validarEmail(email) {
-    const regex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.([a-z]+)?\.([a-z]+)?)?$/
+    const regex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.([a-z]+))?(\.([a-z]+)?)?$/
     return regex.test(email);
 }
 
