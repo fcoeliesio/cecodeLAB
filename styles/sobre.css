@@ -44,11 +44,8 @@ header {
   text-align: left; 
   margin-left: 2%; 
 }
-.sobre{
-  background-color: #1B71A3;
-}
 #a-sobre {
-  color: white;
+  color:#1B71A3;
   font-family: Inter;
   font-style: normal;
   font-weight: 100;
@@ -57,7 +54,7 @@ header {
   margin: 2%;
 }
 .sobre-p {
-  color: white;
+  color: rgb(83, 83, 83);
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -66,7 +63,12 @@ header {
   text-align: justify;
   margin: 2%;
 }
-.objetivo {
+.imagem_laboratorio {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+#title-mvv{
   color:#1B71A3;
   font-family: Inter;
   font-style: normal;
@@ -75,8 +77,49 @@ header {
   text-align: justify;
   margin: 2%;
 }
+.missao{
+  color:rgb(83, 83, 83);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: justify;
+  margin: 2%;
+}
+.visao{
+  color:rgb(83, 83, 83);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: justify;
+  margin: 2%;
+}
+.valor ul {
+  list-style-position: outside;
+  padding-left: 2%; 
+  margin-top: 0; 
+}
+.valor ul li {
+  list-style-type: disc;
+  margin-bottom: 0.5em; 
+}
+.valor{
+  color:rgb(83, 83, 83);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: justify;
+  margin: 2%;
+}
+.imagem_mvv {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
 .funcoes{
-  color:#1B71A3;
+  color:rgb(83, 83, 83);
   font-family: Inter;
   font-style: normal;
   font-weight: 100;
@@ -85,7 +128,7 @@ header {
   margin: 2%;
 }
 .beneficios {
-  color:#1B71A3;
+  color:rgb(83, 83, 83);
   font-family: Inter;
   font-style: normal;
   font-weight: 100;
