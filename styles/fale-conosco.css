@@ -80,11 +80,8 @@ header {
   width: 80%;
 }
 
-#select-issue {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 1rem;
+.mandatory {
+  color: red;
 }
 
 .fieldset-form {
@@ -94,6 +91,7 @@ header {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .fieldset-form div {
@@ -109,6 +107,7 @@ header {
   font-size: 16px;
   border: 1px solid #9a9a9a;
   border-radius: 8px;
+  width: 100%;
 }
 
 #data-comentario {
@@ -159,6 +158,15 @@ header {
   transform: scale(1.01, 1.1);
   cursor: pointer;
   background-color: blue;
+}
+
+.button-form:disabled {
+  background-color: #464646;
+}
+
+.button-form:disabled:hover{
+  cursor: auto;
+  transform: scale(1);
 }
 
 footer {
@@ -215,7 +223,7 @@ footer {
 }
 
 @media (max-width: 767px) {
-  .fieldset-form, #select-issue, .content-footer, .copyright, .logo{
+  .fieldset-form, .content-footer, .copyright, .logo{
     flex-direction: column;
   }
   .fieldset-form {
