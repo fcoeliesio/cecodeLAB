@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fale Conosco</title>
     <link rel="stylesheet" href="../styles/fale-conosco.css" />
+    <script type="module" src="../js/fale-conosco/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -39,7 +40,7 @@
           <fieldset id="personal-data" class="fieldset-form">
             <legend>Informações Pessoais</legend>
             <div>
-              <label for="data-name">Nome</label>
+              <label for="data-name">Nome<span class="mandatory">*</span></label>
               <input
                 type="text"
                 name="name"
@@ -48,65 +49,75 @@
                 placeholder="Nome"
                 required
               />
+              <span class="input-error" id="name-error">*Nome Inválido. Por favor, insira um nome válido. Ex.: José da Silva</span>
             </div>
             <div>
-              <label for="data-email">E-Mail</label>
+              <label for="data-email">E-Mail<span class="mandatory">*</span></label>
               <input
                 type="email"
                 name="email"
                 class="data-input"
                 id="data-email"
-                placeholder="Email"
+                placeholder="exemplo@exemplo.com.br"
                 required
               />
+              <span class="input-error" id="email-error">*E-mail Inválido. Por favor, insira um e-mail válido. Ex.: exemplo@exemplo.com</span>
             </div>
           </fieldset>
 
           <fieldset id="contact" class="fieldset-form">
             <legend>Contato</legend>
             <div>
-                <label for="data-telefone">Telefone</label>
+                <label for="data-telefone">Telefone<span class="mandatory">*</span></label>
                 <input
                   type="tel"
                   name="telefone"
                   class="data-input"
                   id="data-telefone"
                   placeholder="Telefone"
+                  maxlength="10"
                   required
                 />
+                <span class="input-error" id="telefone-error">*Telefone Inválido. Por favor, insira um número válido. Ex.: 88999991111</span>
             </div>
             <div>
-                <label for="data-celular">Celular</label>
+                <label for="data-celular">Celular<span class="mandatory">*</span></label>
                 <input
                   type="tel"
                   name="celular"
                   class="data-input"
                   id="data-celular"
                   placeholder="Celular"
+                  maxlength="11"
                   required
                 />
+                <span class="input-error" id="celular-error">*Celular Inválido. Por favor, insira um número válido. Ex.: 88999991111</span>
             </div>
           </fieldset>
         </section>
         <section class="help-data">
           <fieldset class="fieldset-form">
             <legend>Motivos do contato</legend>
-            <div id="select-issue">
-              <select class="form-select" id="select-assunto">
-                <option value="" selected disabled hidden>Assunto *</option>
-                <option value="Reclamações">Reclamações</option>
-                <option value="Sugestão">Sugestão</option>
-                <option value="Duvidas">Duvidas</option>
-                <option value="Elogios">Elogios</option>
-              </select>
-              <select class="form-select" id="select-atividade">
-                <option value="" selected disabled hidden>Atividade *</option>
-                <option value="Colaborador">Colaborador</option>
-                <option value="Publico-externo">Publico Externo</option>
-                <option value="Clientes">Clientes</option>
-                <option value="Parceiros">Parceiros</option>
-              </select>
-            </div>
+              <div>
+                <select class="form-select" id="assunto" required>
+                  <option value="" selected disabled hidden>Assunto<span class="mandatory">*</span></option>
+                  <option value="Reclamações">Reclamações</option>
+                  <option value="Sugestão">Sugestão</option>
+                  <option value="Duvidas">Duvidas</option>
+                  <option value="Elogios">Elogios</option>
+                </select>
+                <span class="input-error" id="assunto-error">*Por favor, selecione um assunto.</span>
+              </div>
+              <div>
+                <select class="form-select" id="atividade" required>
+                  <option value="" selected disabled hidden>Atividade<span class="mandatory">*</span></option>
+                  <option value="Colaborador">Colaborador</option>
+                  <option value="Publico-externo">Publico Externo</option>
+                  <option value="Clientes">Clientes</option>
+                  <option value="Parceiros">Parceiros</option>
+                </select>
+                <span class="input-error" id="atividade-error">*Por favor, selecione uma atividade.</span>
+              </div>
             <textarea
               name="comentario"
               id="data-comentario"
