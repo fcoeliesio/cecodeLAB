@@ -11,6 +11,7 @@ body {
   }
 main {
     width: 100%;
+    padding: 1rem;
   }
 header {
     background: #1B71A3;
@@ -24,7 +25,6 @@ header {
 .name-cecode {
     color: white;
     text-align: center;
-    font-family: Inter;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -33,7 +33,6 @@ header {
 .name-lab {
     color: white;
     text-align: center;
-    font-family: Inter;
     font-size: 52px;
     font-style: normal;
     font-weight: 100;
@@ -41,8 +40,10 @@ header {
     margin-left: 8px;
   }
 .button-voltar {
-  text-align: left; 
-  margin-left: 2%; 
+  text-align: left;  
+}
+.button-voltar a {
+  color: white;
 }
 .sobre {
   display: flex;
@@ -56,7 +57,6 @@ header {
 }
 .sobre h1 {
   color:#1B71A3;
-  font-family: Inter;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -65,13 +65,14 @@ header {
 }
 .sobre-p {
   color: rgb(66, 66, 66);
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  text-align: justify;
   margin: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .mvv {
   display: flex;
@@ -85,7 +86,6 @@ header {
 }
 .mvv h2 {
   color:#1B71A3;
-  font-family: Inter;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -94,33 +94,36 @@ header {
 }
 .mvv h3 {
   color:black;
-  font-family: Inter;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  text-align: justify;
   margin: 2%;
 }
 .mvv p {
   color: rgb(66, 66, 66);
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  text-align: justify;
   margin: 2%;
 }
 .mvv li {
   color: rgb(66, 66, 66);
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  text-align: justify;
   margin: 2%;
   list-style: none;
+}
+.valor ul{
+  display: flex;
+}
+.valor h3{
+  text-align: center;
+}
+#mvv-id{
+  display: flex;
 }
 .funcoes {
   display: flex;
@@ -134,7 +137,6 @@ header {
 }
 .funcoes h2 {
   color:#1B71A3;
-  font-family: Inter;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -143,12 +145,10 @@ header {
 }
 .funcoes li {
   color: rgb(66, 66, 66);
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  text-align: justify;
   margin: 2%;
   list-style: none;
 }
@@ -164,7 +164,6 @@ header {
 }
 .beneficios h2 {
   color:#1B71A3;
-  font-family: Inter;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -173,12 +172,10 @@ header {
 }
 .beneficios li {
   color: rgb(66, 66, 66);
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  text-align: justify;
   margin: 2%;
   list-style: none;
 }
