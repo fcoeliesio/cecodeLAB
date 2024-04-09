@@ -92,6 +92,7 @@ main {
   background: #0050DC;
   margin-right: 2rem;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 .signature:hover {
