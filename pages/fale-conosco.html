@@ -1,81 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fale Conosco</title>
-    <link rel="stylesheet" href="../styles/fale-conosco.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/fale-conosco.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <div class="name-cecode">CE/CODE</div>
-            <div class="name-lab">LAB</div>
-        </div>
+      <div class="button-voltar">
+        <a href="/index.html">Voltar</a>
+      </div>
+      <h1 class="logo">
+        <span class="name-cecode">CE/CODE</span>
+        <span class="name-lab">LAB</span>
+      </h1>
     </header>
-    <br>
     <main>
-        <div class="button-voltar">
-            <a href="/index.html">Voltar</a>
+      <h1 class="ajuda">Ajuda</h1>
+      <div class="informacoes-help">
+        <p>
+          Seja bem-vindo ao Fale Conosco da CE/CODE LAB - Serviço de Atendimento
+          ao Consumidor.
+        </p>
+        <p>
+          Informamos que só poderemos iniciar o contato e registrar sua
+          solicitação após o preenchimento do formulário.
+        </p>
+        <p>
+          Em cumprimento à Lei 13.709/2018 (LGPD) todos os dados fornecidos
+          serão mantidos sob sigilo e protegidos por esta empresa, e poderão ser
+          compartilhados para a condução do seu atendimento ou quando solicitado
+          pelas Autoridades Públicas de saúde.
+        </p>
+      </div>
+      <form class="Help-form" action="#" method="post">
+        <section class="help-data">
+          <fieldset id="personal-data" class="fieldset-form">
+            <legend>Informações Pessoais</legend>
+            <div>
+              <label for="data-name">Nome</label>
+              <input
+                type="text"
+                name="name"
+                class="data-input"
+                id="data-name"
+                placeholder="Nome"
+                required
+              />
+            </div>
+            <div>
+              <label for="data-email">E-Mail</label>
+              <input
+                type="email"
+                name="email"
+                class="data-input"
+                id="data-email"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset id="contact" class="fieldset-form">
+            <legend>Contato</legend>
+            <div>
+                <label for="data-telefone">Telefone</label>
+                <input
+                  type="tel"
+                  name="telefone"
+                  class="data-input"
+                  id="data-telefone"
+                  placeholder="Telefone"
+                  required
+                />
+            </div>
+            <div>
+                <label for="data-celular">Celular</label>
+                <input
+                  type="tel"
+                  name="celular"
+                  class="data-input"
+                  id="data-celular"
+                  placeholder="Celular"
+                  required
+                />
+            </div>
+          </fieldset>
+        </section>
+        <section class="help-data">
+          <fieldset class="fieldset-form">
+            <legend>Motivos do contato</legend>
+            <div id="select-issue">
+              <select class="form-select" id="select-assunto">
+                <option value="" selected disabled hidden>Assunto *</option>
+                <option value="Reclamações">Reclamações</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Duvidas">Duvidas</option>
+                <option value="Elogios">Elogios</option>
+              </select>
+              <select class="form-select" id="select-atividade">
+                <option value="" selected disabled hidden>Atividade *</option>
+                <option value="Colaborador">Colaborador</option>
+                <option value="Publico-externo">Publico Externo</option>
+                <option value="Clientes">Clientes</option>
+                <option value="Parceiros">Parceiros</option>
+              </select>
+            </div>
+            <textarea
+              name="comentario"
+              id="data-comentario"
+              placeholder="Comentario"
+            ></textarea>
+          </fieldset>
+        </section>
+        <div class="form-enviar">
+          <input type="checkbox" id="concordo" required />
+          <label for="concordo" id="concordo"
+            >Ao prosseguir com o envio deste formulário, fica consentido o
+            fornecimento de seus dados pessoais de acordo com os esclarecimentos
+            anteriormente prestados.</label
+          >
         </div>
-        <h1><p class="ajuda">Ajuda</p></h1>
-        <br>
-        <h2><p class="Dados">Dados</p></h2>
-        <br>
-        <form class="Help-form" action="#" method="post">
-            <div class="help-data">
-                <select class="form-control">
-                    <option value="">Assunto *</option>
-                    <option value="Reclamações">Reclamações</option>
-                    <option value="Sugestão">Sugestão</option>
-                    <option value="Duvidas">Duvidas</option>
-                    <option value="Elogios">Elogios</option>
-                </select>
-                <select class="form-atividade">
-                    <option value="">Atividade *</option>
-                    <option value="Colaborador">Colaborador</option>
-                    <option value="Publico-externo">Publico Externo</option>
-                    <option value="Clientes">Clientes</option>
-                    <option value="Parceiros">Parceiros</option>
-                </select>
-                <input type="text" name="name" class="data-name" placeholder="Nome" required>
-                <input type="email" name="email" class="data-email" placeholder="Email" required>
-                <input type="text" name="endereco" class="data-endereco" placeholder="Endereço" required>
-                <input type="text" name="bairro" class="data-bairro" placeholder="Bairro" required>
-                <input type="text" name="cidade" class="data-cidade" placeholder="Cidade" required>
-                <input type="text" name="estado" class="data-estado" placeholder="Estado" required>
-                <input type="text" name="cep" class="data-cep" placeholder="Cep" required>
-                <input type="tel" name="telefone" class="data-telefone" placeholder="Telefone" required>
-                <input type="tel" name="celular" class="data-celular" placeholder="Celular" required>
-                <textarea name="comentario" id="data-comentario" placeholder="Comentario"></textarea>
-            </div>
-            <br>
-            <div class="informacoes-help">
-                <p>Seja bem-vindo ao Fale Conosco da CE/CODE LAB - Serviço de Atendimento ao Consumidor.</p> <br>
-                <p>Informamos que só poderemos iniciar o contato e registrar sua solicitação após o preenchimento do formulário.</p> <br>
-                <p>Em cumprimento à Lei 13.709/2018 (LGPD) todos os dados fornecidos serão mantidos sob sigilo e protegidos por esta empresa, e poderão ser compartilhados para a condução do seu atendimento ou quando solicitado pelas Autoridades Públicas de saúde.</p><br><br><br>
-            </div>
-            <div class="form-enviar">
-                <input type="checkbox" id="concordo" required>
-                <label for="concordo" id="concordo">Ao prosseguir com o envio deste formulário, fica consentido o fornecimento de seus dados pessoais de acordo com os esclarecimentos anteriormente prestados.</label>
-                <button type="submit" class="button-form">Enviar</button>
-            </div>
-            <div class="form-sac">
-                <div class="title">SAC</div>
-                <img src="../assets/icons/icon_help_sac.svg" id="icon-help" alt="nunber-sac">
-                <div class="text-form-sac">
-                    <p>A CE/CODE LAB faz questão de ouvir a sua opinião.</p>
-                    <p>Por isso, disponibiliza uma equipe para atendê-lo(a).</p>
-                    <p>O atendimento é realizado de segunda a sexta-feira, das 9h às 17h (exceto feriados).</p>
-                </div>
-            </div>
-        </form>
+        <input type="submit" class="button-form" value="Enviar" />
+      </form>
     </main>
-    <br>
     <footer>
-        <div class="message-footer">
-          &#169; 2024 cecodeLAB. Todos os direitos reservados.
+      <div class="content-footer">
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><h3>Institucional</h3></li>
+            <li><a href="">A cecodeLAB</a></li>
+            <li><a href="">Trabalhe Conosco</a></li>
+            <li><a href="">Agenda ESG</a></li>
+          </ul>
         </div>
-      </footer>
-</body>
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><h3>Serviços</h3></li>
+            <li><a href="">Gestão de Laboratórios</a></li>
+            <li><a href="">Tecnologia da Informação</a></li>
+            <li><a href="">Webmail</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><h3>Suporte</h3></li>
+            <li><img class="footer-image" src="../assets/icons/icon_help_sac.svg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+      <span>&#169; Copyright 2024 cecodeLAB. </span> <span>Todos os direitos reservados.</span>
+      </div>
+    </footer>
+  </body>
 </html>
