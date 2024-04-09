@@ -274,44 +274,6 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-  .content {
-    width: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .info, .screeshot-system {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-shrink: 0;
-    border-radius: 44px;
-    background: #F3F7FC;
-    margin: 1rem;
-  }
-
-  .text-services {
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .text-sing {
-    width: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
-  }
-
-  .screeshot-system div img {
-    width: 80vh;
-  }
-
-
-
   .logo {
     display: flex;
     align-items: center;
@@ -392,6 +354,42 @@ footer {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1rem;
+  }
+
+  .content {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info, .screeshot-system {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 44px;
+    background: #F3F7FC;
+    margin: 1rem;
+  }
+
+  .text-services {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-sing {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .screeshot-system div img {
+    width: 80vh;
   }
 
   .open {
