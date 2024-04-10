@@ -15,7 +15,7 @@
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)]()
 
 ## Screenshots:
-<img src="./assets/images/readme-image-1.png" height="240px"/> <img src="./assets/screenshots/Página_produtos.png" height="240px"/> 
+<img src="./assets/images/readme-image-1.png" height="240px"/>
 
 ## Instruções de Execução:
 
