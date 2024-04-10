@@ -118,6 +118,7 @@ header {
 }
 .valor ul{
   display: flex;
+  flex-wrap: wrap;
 }
 .valor h3{
   text-align: center;
@@ -243,14 +244,14 @@ footer {
     flex-direction: column;
   }
   .imagem_laboratorio {
-    margin-top: 1rem;
+    margin: 1rem;
     text-align: center;
   }
   .mvv {
     flex-direction: column;
   }
   .imagem_mvv {
-    margin-top: 1rem;
+    margin: 1rem;
     text-align: center; 
     order: 3;
   }
@@ -258,17 +259,17 @@ footer {
     flex-direction: column;
   }
   .lista-funcao {
-    margin-top: 1rem; 
+    margin-top: 1rem;
   }
   .imagem_funcao {
-    margin-top: 1rem;
+    margin: 1rem;
     text-align: center; 
   }
   .beneficios {
     flex-direction: column;
   }
   .imagem_beneficio {
-    margin-top: 1rem;
+    margin: 1rem;
     text-align: center; 
     order: 3;
   }
