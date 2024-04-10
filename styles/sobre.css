@@ -219,6 +219,12 @@ footer {
   padding-bottom: 24px;
 }
 @media (max-width: 767px) {
+  .content-footer, .copyright{
+    flex-direction: column;
+  }
+  .content-footer {
+    gap: 2.5rem;
+  }
   .sobre {
     flex-direction: column;
   }
