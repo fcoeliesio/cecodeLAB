@@ -129,7 +129,7 @@ main {
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #000;
+  color: #363434;
   font-family: Inter;
   font-size: 30px;
   font-style: normal;
@@ -182,6 +182,7 @@ main {
 }
 
 .signature {
+  border: none;
   width: 200px;
   flex-shrink: 0;
   border-radius: 18px;
@@ -247,6 +248,13 @@ footer {
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 24px;
+}
+
+.footer-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
 }
 
 .footer-list li a {
@@ -392,7 +400,64 @@ footer {
     width: 80vh;
   }
 
-  
+  footer {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #1B71A3;
+    box-shadow: 4px 2px 3px 2px #464646;
+  }
+
+  .content-footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin:24px;
+  }
+
+  .footer-image {
+    width: 240px;
+  }
+
+  .footer-links ul li h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+
+  .footer-list {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-list li {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .footer-list li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .footer-list li a:hover {
+    text-decoration: underline;
+  }
+
+  .copyright {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    padding-bottom: 24px;
+  }
+
   .open {
     display: block;
   }
