@@ -218,6 +218,20 @@ footer {
   font-size: 14px;
   padding-bottom: 24px;
 }
+.imagem_laboratorio img,
+.imagem_mvv img,
+.imagem_funcao img,
+.imagem_beneficio img {
+  max-width: 100%;
+  height: auto; 
+}
+@media (min-width: 768px) {
+  .imagem_laboratorio img,
+  .imagem_mvv img {
+    max-width: 70%;
+    min-width: 550px; 
+  }
+}
 @media (max-width: 767px) {
   .content-footer, .copyright{
     flex-direction: column;
