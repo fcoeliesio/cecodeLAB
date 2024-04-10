@@ -71,6 +71,7 @@ header {
 .help-data {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
 }
@@ -79,11 +80,8 @@ header {
   width: 80%;
 }
 
-#select-issue {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 1rem;
+.mandatory {
+  color: red;
 }
 
 .fieldset-form {
@@ -92,13 +90,14 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-between;
   gap: 1rem;
 }
 
 .fieldset-form div {
   display: flex;
   flex-direction: column;
-  flex-grow: 2;
+  width: 49%;
 }
 
 .form-select,
@@ -108,6 +107,7 @@ header {
   font-size: 16px;
   border: 1px solid #9a9a9a;
   border-radius: 8px;
+  width: 100%;
 }
 
 #data-comentario {
@@ -160,6 +160,15 @@ header {
   background-color: blue;
 }
 
+.button-form:disabled {
+  background-color: #464646;
+}
+
+.button-form:disabled:hover{
+  cursor: auto;
+  transform: scale(1);
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -207,12 +216,24 @@ footer {
   padding-bottom: 24px;
 }
 
+.input-error {
+  display: none;
+  font-size: .9rem;
+  color: red;
+}
+
+@media (max-width: 900px) {
+  .fieldset-form div, .form-select {
+    width: 100%;
+  } 
+}
+
 @media (max-width: 767px) {
-  .fieldset-form, #select-issue, .content-footer, .copyright, .logo{
+  .fieldset-form, .content-footer, .copyright, .logo{
     flex-direction: column;
   }
-  .form-select{
-    width: 100%;
+  .fieldset-form {
+    gap: 1rem;
   }
   .content-footer {
     gap: 2.5rem;
