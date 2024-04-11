@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/compra.css" />
+    <script type="module" src="/js/compra/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/currencyformatter.js/2.2.0/currencyFormatter.min.js" integrity="sha512-zaNuym1dVrK6sRojJ/9JJlrMIB+8f9IdXGzsBQltqTElXpBHZOKI39OP+bjr8WnrHXZKbJFdOKLpd5RnPd4fdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Adquira agora o nosso produto</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-header">
+        <div class="logo">
+          <div class="name-cecode"><a href="index.html">CECODE</a></div>
+          <div class="name-lab"><a href="index.html">LAB</a></div>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-menu-item">
+              <a href="#" class="menu-link">Página Inicial</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="sobre.html" class="menu-link">Sobre</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="fale-conosco.html" class="menu-link">Fale conosco</a>
+            </li>
+          </ul>
+        </div>
+        <div class="login-btn">
+          <button><a href="./pages/login.html">Entrar</a></button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form class="Help-form" action="#" method="post">
+        <section id="personal-info">
+          <section id="call-to-action">
+            <h3>
+              Crie sua conta para testar nosso ERP gratuitamente por 30 dias
+            </h3>
+            <ul>
+              <li>Sem cobrança durante o período de teste</li>
+              <li>Acesso a todas as funcionalidades do plano escolhido</li>
+              <li>Cancele a qualquer momento</li>
+            </ul>
+          </section>
+          <section class="help-data">
+            <fieldset id="personal-data" class="fieldset-form">
+              <legend>Informações Pessoais</legend>
+              <div>
+                <label for="data-name"
+                  >Nome<span class="mandatory">*</span></label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  class="data-input"
+                  id="data-name"
+                  placeholder="Nome"
+                  required
+                />
+                <span class="input-error" id="name-error"
+                  >*Nome Inválido. Por favor, insira um nome válido. Ex.: José
+                  da Silva</span
+                >
+              </div>
+              <div>
+                <label for="data-cnpj"
+                  >CNPJ<span class="mandatory">*</span></label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  class="data-input"
+                  id="data-cnpj"
+                  placeholder="00 000 000 0000 00"
+                  required
+                />
+                <span class="input-error" id="name-error"
+                  >*Nome Inválido. Por favor, insira um nome válido. Ex.: José
+                  da Silva</span
+                >
+              </div>
+              <div>
+                <label for="data-password"
+                  >Senha<span class="mandatory">*</span></label
+                >
+                <input
+                  type="password"
+                  name="name"
+                  class="data-input"
+                  id="data-password"
+                  placeholder="********"
+                  required
+                  minlength="12"
+                  maxlength="32"
+                />
+                <p id="password-tip">Entre 12 e 32 caracteres.</p>
+                <span class="input-error" id="name-error"
+                  >*Nome Inválido. Por favor, insira um nome válido. Ex.: José
+                  da Silva</span
+                >
+              </div>
+            </fieldset>
+
+            <fieldset id="contact" class="fieldset-form">
+              <legend>Contato</legend>
+              <div>
+                <label for="data-email"
+                  >E-Mail<span class="mandatory">*</span></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="data-input"
+                  id="data-email"
+                  placeholder="exemplo@exemplo.com.br"
+                  required
+                />
+                <span class="input-error" id="email-error"
+                  >*E-mail Inválido. Por favor, insira um e-mail válido. Ex.:
+                  exemplo@exemplo.com</span
+                >
+              </div>
+              <div>
+                <label for="data-telefone"
+                  >Número para Contato<span class="mandatory">*</span></label
+                >
+                <input
+                  type="tel"
+                  name="telefone"
+                  class="data-input"
+                  id="data-telefone"
+                  placeholder="DDD+Número do Telefone"
+                  maxlength="10"
+                  required
+                />
+                <span class="input-error" id="telefone-error"
+                  >*Telefone Inválido. Por favor, insira um número válido. Ex.:
+                  88999991111</span
+                >
+              </div>
+            </fieldset>
+          </section>
+          <section class="form-opcionais">
+            <h4>Conteúdos e dicas sobre o uso do sistema</h4>
+            <div id="opcionais-checkboxes">
+              <div>
+                <input type="checkbox" id="tips-email" checked />
+                <label for="tips-email">Receber por e-mail</label>
+              </div>
+              <div>
+                <input type="checkbox" id="tips-whatsapp" checked />
+                <label for="tips-whatsapp">Receber por WhatsApp</label>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="separator"></div>
+        <section id="plan-info">
+          <div id="plans">
+            <h4>Escolha já seu plano</h4>
+            <select name="plans" id="plan-select" class="choices">
+              <option value="basic">Básico</option>
+              <option value="professional" selected>Professional</option>
+              <option value="professional_plus">Professional Plus</option>
+            </select>
+          </div>
+          <div id="payment">
+            <h4>Adicione um cartão de crédito</h4>
+            <div id="credit-card">
+              <div class="cc-number">
+                <label for="cc-number">Número do Cartão</label>
+                <input
+                  type="text"
+                  class="data-input"
+                  name="cc-number"
+                  placeholder="0000 0000 0000 0000"
+                  id="cc-number"
+                  maxlength="12"
+                  required
+                />
+              </div>
+              <div class="cc-owner">
+                <label for="cc-owner">Nome do Titular</label>
+                <input
+                  type="text"
+                  name="cc-owner"
+                  id="cc-owner"
+                  placeholder="Nome como está no cartão"
+                  class="data-input"
+                  required
+                />
+              </div>
+              <div class="cc-validity">
+                <label for="cc-validity">Validade</label>
+                <input
+                  type="text"
+                  class="data-input"
+                  name="cc-validity"
+                  placeholder="mm/aa"
+                  id="cc-validity"
+                />
+              </div>
+              <div class="cc-ccv">
+                <label for="cc-ccv">CCV</label>
+                <input
+                  type="text"
+                  class="data-input"
+                  name="cc-ccv"
+                  id="cc-ccv"
+                  maxlength="3"
+                  placeholder="***"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div id="payment-options">
+            <div id="price-title">
+              <h4>Conheça as opções de pagamento:</h4>
+              <fieldset id="pay-opt-container">
+                <div>
+                  <label for="pay-monthly">Mensal</label>
+                  <input type="radio" name="pay-opt" id="pay-monthly" />
+                </div>
+                <div>
+                  <label for="pay-annually">Anual</label>
+                  <input type="radio" name="pay-opt" id="pay-annually" checked/>
+                </div>
+              </div>
+            </fieldset>
+            <div id="price-container">
+              <span id="parcels">12x</span>
+              <span id="parcel-price">239.90</span>
+            </div>
+            <div id="full-price-container">
+              <span id="total"
+                >ou 1x <span id="full-price">2878.80</span> no plano
+                atual</span
+              >
+            </div>
+          </div>
+          <p id="agreement">
+            Ao prosseguir você concorda com os termos de uso e a política de
+            proteção de dados da CECodeLab LTDA.
+          </p>
+          <input
+            type="submit"
+            class="button-form"
+            value="Começar o Teste"
+            disabled
+          />
+        </section>
+      </form>
+    </main>
+    <footer>
+      <div class="content-footer">
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><h3>Institucional</h3></li>
+            <li><a href="">A cecodeLAB</a></li>
+            <li><a href="">Trabalhe Conosco</a></li>
+            <li><a href="">Agenda ESG</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><h3>Serviços</h3></li>
+            <li><a href="">Gestão de Laboratórios</a></li>
+            <li><a href="">Tecnologia da Informação</a></li>
+            <li><a href="">Webmail</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><h3>Suporte</h3></li>
+            <li>
+              <img
+                class="footer-image"
+                src="/assets/icons/icon_help_sac.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &#169; Copyright 2024 cecodeLAB. Todos os direitos reservados.
+      </div>
+    </footer>
+  </body>
+</html>
