@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/compra.css" />
-    <script type="module" src="/js/compra/script.js" defer></script>
-    <script src="/js/index.js"></script>
+    <script type="module" src="../js/compra/script.js" defer></script>
+    <script src="../js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/currencyformatter.js/2.2.0/currencyFormatter.min.js" integrity="sha512-zaNuym1dVrK6sRojJ/9JJlrMIB+8f9IdXGzsBQltqTElXpBHZOKI39OP+bjr8WnrHXZKbJFdOKLpd5RnPd4fdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Adquira agora o nosso produto</title>
   </head>
@@ -25,11 +25,11 @@
         </div>
   
         <div class="login-btn">
-          <button><a href="./pages/login.html">Entrar</a></button>
+          <button><a href="login.html">Entrar</a></button>
         </div>
   
         <div class="mobile-menu-icon">
-          <button onclick="show_menu()" ><img src="/assets/icons/icon_menu_open.svg" alt="" class="icon"></button>
+          <button onclick="show_menu()" ><img src="../assets/icons/icon_menu_open.svg" alt="" class="icon"></button>
         </div>
       </nav>
       <div class="menu-mobile">
@@ -82,15 +82,15 @@
                 >
                 <input
                   type="text"
-                  name="name"
+                  name="cnpj"
                   class="data-input"
                   id="data-cnpj"
                   placeholder="00 000 000 0000 00"
+                  maxlength="14"
                   required
                 />
-                <span class="input-error" id="name-error"
-                  >*Nome Inválido. Por favor, insira um nome válido. Ex.: José
-                  da Silva</span
+                <span class="input-error" id="cnpj-error"
+                  >*CNPJ Inválido. Por favor, insira um CNJP válido. Ex.: 12 345 678 9101 11</span
                 >
               </div>
               <div>
@@ -99,7 +99,7 @@
                 >
                 <input
                   type="password"
-                  name="name"
+                  name="password"
                   class="data-input"
                   id="data-password"
                   placeholder="********"
@@ -108,9 +108,8 @@
                   maxlength="32"
                 />
                 <p id="password-tip">Entre 12 e 32 caracteres.</p>
-                <span class="input-error" id="name-error"
-                  >*Nome Inválido. Por favor, insira um nome válido. Ex.: José
-                  da Silva</span
+                <span class="input-error" id="password-error"
+                  >*Senha Inválida. A senha deve conter no mínimo 12 e no máximo 32 caracteres.</span
                 >
               </div>
             </fieldset>
@@ -189,9 +188,10 @@
                   name="cc-number"
                   placeholder="0000 0000 0000 0000"
                   id="cc-number"
-                  maxlength="12"
+                  maxlength="16"
                   required
                 />
+              <span class="input-error" id="cc-number-error">*Número Inválido. Por favor, insira um número de cartão válido. Ex.:1234 1352 1234 1235</span>
               </div>
               <div class="cc-owner">
                 <label for="cc-owner">Nome do Titular</label>
@@ -203,6 +203,7 @@
                   class="data-input"
                   required
                 />
+              <span class="input-error" id="cc-owner-error">*Nome Inválido. Por favor, insira um nome válido. Ex.: José da Silva</span>
               </div>
               <div class="cc-validity">
                 <label for="cc-validity">Validade</label>
@@ -210,9 +211,10 @@
                   type="text"
                   class="data-input"
                   name="cc-validity"
-                  placeholder="mm/aa"
+                  placeholder="mm/aaaa"
                   id="cc-validity"
                 />
+              <span class="input-error" id="cc-validity-error">*Data Inválida. Por favor, insira uma data válido. Ex.: 04/2024</span>
               </div>
               <div class="cc-ccv">
                 <label for="cc-ccv">CCV</label>
@@ -222,9 +224,11 @@
                   name="cc-ccv"
                   id="cc-ccv"
                   maxlength="3"
+                  minlength="3"
                   placeholder="***"
                   required
                 />
+              <span class="input-error" id="cc-ccv-error">*CCV Inválido. Por favor, insira um CCV válido. Ex.: 123</span>
               </div>
             </div>
           </div>
@@ -290,7 +294,7 @@
             <li>
               <img
                 class="footer-image"
-                src="/assets/icons/icon_help_sac.svg"
+                src="../assets/icons/icon_help_sac.svg"
                 alt=""
               />
             </li>
