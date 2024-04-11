@@ -1,0 +1,280 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+  }
+body {
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+main {
+    width: 100%
+  }
+header {
+    background: #1B71A3;
+    padding: 20px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.name-cecode {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+.name-lab {
+    color: white;
+    text-align: center;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    margin-left: 8px;
+  }
+.button-voltar {
+  text-align: left;  
+}
+.button-voltar a {
+  color: white;
+}
+.sobre {
+  display: flex;
+  align-items: center;
+}
+.imagem_laboratorio {
+  float: right;
+}
+.imagem_laboratorio img {
+  height: auto;
+}
+.sobre h1 {
+  color:#1B71A3;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  margin: 2%;
+}
+.sobre-p {
+  color: rgb(66, 66, 66);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mvv {
+  display: flex;
+  align-items: center;
+}
+.imagem_mvv {
+  float:left;
+}
+.imagem_mvv img {
+  height: auto;
+}
+.mvv h2 {
+  color:#1B71A3;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  margin: 2%;
+}
+.mvv h3 {
+  color:black;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin: 2%;
+}
+.mvv p {
+  color: rgb(66, 66, 66);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin: 2%;
+}
+.mvv li {
+  color: rgb(66, 66, 66);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin: 2%;
+  list-style: none;
+}
+.valor ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.valor h3{
+  text-align: center;
+}
+#mvv-id{
+  display: flex;
+}
+.funcoes {
+  display: flex;
+  align-items: center;
+}
+.imagem_funcao {
+  float:left;
+}
+.imagem_funcao img {
+  height: auto;
+}
+.funcoes h2 {
+  color:#1B71A3;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  margin: 2%;
+}
+.funcoes li {
+  color: rgb(66, 66, 66);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin: 2%;
+  list-style: none;
+}
+.beneficios {
+  display: flex;
+  align-items: center;
+}
+.imagem_beneficio {
+  float:left;
+}
+.imagem_beneficio img {
+  height: auto;
+}
+.beneficios h2 {
+  color:#1B71A3;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  margin: 2%;
+}
+.beneficios li {
+  color: rgb(66, 66, 66);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin: 2%;
+  list-style: none;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1B71A3;
+  box-shadow: 4px 2px 3px 2px #464646;
+}
+.content-footer {
+  display: flex;
+  justify-content: space-between;
+  margin:24px;
+  gap: 5rem;
+}
+.content-footer ul {
+  list-style: none;
+}
+.footer-image {
+  width: 14rem;
+}
+.footer-links ul li h3 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.footer-list li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-list li a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  display: flex;
+  color: #ffffff;
+  font-size: 14px;
+  padding-bottom: 24px;
+}
+.imagem_laboratorio img,
+.imagem_mvv img,
+.imagem_funcao img,
+.imagem_beneficio img {
+  max-width: 100%;
+  height: auto; 
+}
+@media (min-width: 768px) {
+  .imagem_laboratorio img,
+  .imagem_mvv img {
+    max-width: 70%;
+    min-width: 550px; 
+  }
+  main {
+    width: 98%;
+    margin: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .content-footer, .copyright{
+    flex-direction: column;
+  }
+  .content-footer {
+    gap: 2.5rem;
+  }
+  .sobre {
+    flex-direction: column;
+  }
+  .imagem_laboratorio {
+    margin: 1rem;
+    text-align: center;
+  }
+  .mvv {
+    flex-direction: column;
+  }
+  .imagem_mvv {
+    margin: 1rem;
+    text-align: center; 
+    order: 3;
+  }
+  .funcoes {
+    flex-direction: column;
+  }
+  .lista-funcao {
+    margin-top: 1rem;
+  }
+  .imagem_funcao {
+    margin: 1rem;
+    text-align: center; 
+  }
+  .beneficios {
+    flex-direction: column;
+  }
+  .imagem_beneficio {
+    margin: 1rem;
+    text-align: center; 
+    order: 3;
+  }
+}
+
