@@ -1,45 +1,49 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    font-family: sans-serif;
-  }
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
 body {
-    height: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
+  height: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
 main {
-    width: 100%
-  }
+  width: 100%;
+}
 header {
-    background: #1B71A3;
-    padding: 20px;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background: #1b71a3;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+}
 .name-cecode {
-    color: white;
-    text-align: center;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .name-lab {
-    color: white;
-    text-align: center;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 100;
-    line-height: normal;
-    margin-left: 8px;
-  }
+  color: white;
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-left: 8px;
+}
 .button-voltar {
-  text-align: left;  
+  text-align: left;
 }
 .button-voltar a {
   color: white;
@@ -55,7 +59,7 @@ header {
   height: auto;
 }
 .sobre h1 {
-  color:#1B71A3;
+  color: #1b71a3;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -78,13 +82,13 @@ header {
   align-items: center;
 }
 .imagem_mvv {
-  float:left;
+  float: left;
 }
 .imagem_mvv img {
   height: auto;
 }
 .mvv h2 {
-  color:#1B71A3;
+  color: #1b71a3;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -92,7 +96,7 @@ header {
   margin: 2%;
 }
 .mvv h3 {
-  color:black;
+  color: black;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -115,14 +119,14 @@ header {
   margin: 2%;
   list-style: none;
 }
-.valor ul{
+.valor ul {
   display: flex;
   flex-wrap: wrap;
 }
-.valor h3{
+.valor h3 {
   text-align: center;
 }
-#mvv-id{
+#mvv-id {
   display: flex;
 }
 .funcoes {
@@ -130,13 +134,13 @@ header {
   align-items: center;
 }
 .imagem_funcao {
-  float:left;
+  float: left;
 }
 .imagem_funcao img {
   height: auto;
 }
 .funcoes h2 {
-  color:#1B71A3;
+  color: #1b71a3;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -157,13 +161,13 @@ header {
   align-items: center;
 }
 .imagem_beneficio {
-  float:left;
+  float: left;
 }
 .imagem_beneficio img {
   height: auto;
 }
 .beneficios h2 {
-  color:#1B71A3;
+  color: #1b71a3;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -185,13 +189,13 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #1B71A3;
+  background-color: #1b71a3;
   box-shadow: 4px 2px 3px 2px #464646;
 }
 .content-footer {
   display: flex;
   justify-content: space-between;
-  margin:24px;
+  margin: 24px;
   gap: 5rem;
 }
 .content-footer ul {
@@ -223,13 +227,13 @@ footer {
 .imagem_funcao img,
 .imagem_beneficio img {
   max-width: 100%;
-  height: auto; 
+  height: auto;
 }
 @media (min-width: 768px) {
   .imagem_laboratorio img,
   .imagem_mvv img {
     max-width: 70%;
-    min-width: 550px; 
+    min-width: 550px;
   }
   main {
     width: 98%;
@@ -237,7 +241,8 @@ footer {
   }
 }
 @media (max-width: 767px) {
-  .content-footer, .copyright{
+  .content-footer,
+  .copyright {
     flex-direction: column;
   }
   .content-footer {
@@ -255,7 +260,7 @@ footer {
   }
   .imagem_mvv {
     margin: 1rem;
-    text-align: center; 
+    text-align: center;
     order: 3;
   }
   .funcoes {
@@ -266,15 +271,14 @@ footer {
   }
   .imagem_funcao {
     margin: 1rem;
-    text-align: center; 
+    text-align: center;
   }
   .beneficios {
     flex-direction: column;
   }
   .imagem_beneficio {
     margin: 1rem;
-    text-align: center; 
+    text-align: center;
     order: 3;
   }
 }
-
