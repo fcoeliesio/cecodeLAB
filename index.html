@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/index.css">
-  <script src="js/index.js"></script>
-  <title>Página Inicial</title>
-</head>
-<body>
-  <header>
-    <nav class="nav-header">
-      <div class="logo">
-        <div class="name-cecode"><a href="index.html">CECODE</a></div>
-        <div class="name-lab"><a href="index.html">LAB</a></div>
-      </div>
-      <div class="nav-menu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="js/index.js"></script>
+    <title>Página Inicial</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-header">
+        <div class="logo">
+          <div class="name-cecode"><a href="index.html">CECODE</a></div>
+          <div class="name-lab"><a href="index.html">LAB</a></div>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-menu-item">
+              <a href="./index.html" class="menu-link">Página Inicial</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./pages/sobre.html" class="menu-link">Sobre</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./pages/fale-conosco.html" class="menu-link"
+                >Fale conosco</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="login-btn">
+          <button><a href="./pages/login.html">Entrar</a></button>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="show_menu()">
+            <img src="./assets/icons/icon_menu_open.svg" alt="" class="icon" />
+          </button>
+        </div>
+      </nav>
+      <div class="menu-mobile">
         <ul>
-          <li class="nav-menu-item"><a href="./index.html" class="menu-link">Página Inicial</a></li>
-          <li class="nav-menu-item"><a href="./pages/sobre.html" class="menu-link">Sobre</a></li>
-          <li class="nav-menu-item"><a href="./pages/fale-conosco.html" class="menu-link">Fale conosco</a></li>
+          <li class="nav-menu-item">
+            <a href="/index.html" class="menu-link">Página Inicial</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./pages/sobre.html" class="menu-link">Sobre</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./pages/fale-conosco.html" class="menu-link"
+              >Fale conosco</a
+            >
+          </li>
         </ul>
+        <div class="login-btn-mobile">
+          <button><a href="./pages/login.html">Entrar</a></button>
+        </div>
       </div>
-
-      <div class="login-btn">
-        <button><a href="./pages/login.html">Entrar</a></button>
-      </div>
-
-      <div class="mobile-menu-icon">
-        <button onclick="show_menu()" ><img src="./assets/icons/icon_menu_open.svg" alt="" class="icon"></button>
-      </div>
-    </nav>
-    <div class="menu-mobile">
-      <ul>
-        <li class="nav-menu-item"><a href="/index.html" class="menu-link">Página Inicial</a></li>
-        <li class="nav-menu-item"><a href="./pages/sobre.html" class="menu-link">Sobre</a></li>
-        <li class="nav-menu-item"><a href="./pages/fale-conosco.html" class="menu-link">Fale conosco</a></li>
-      </ul>
-      <div class="login-btn-mobile">
-        <button><a href="./pages/login.html">Entrar</a></button>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="content">
+    </header>
+    <main>
       <div class="info">
         <div class="text-top">
-          <p>O sistema de gerenciamento de laboratório feito para sua empresa</p>
+          <p>
+            O sistema de gerenciamento de laboratório feito para sua empresa
+          </p>
         </div>
         <div class="text-services">
           <ul class="list-services">
@@ -62,54 +81,52 @@
           </ul>
         </div>
         <div class="text-sing">
-          <div class="text-sing-up">
-            <p>Aumente a eficiencia do seu negócio e otimize seus investimentos, assine já!</p>
-          </div>
-          <button class="signature"><p>Assine e teste grátis</p></button>
+          <p class="text-sing-up">
+            Aumente a eficiencia do seu negócio e otimize seus
+            investimentos, assine já!
+          </p>
+          <button class="signature"><a href="/pages/compra.html">Assine e teste grátis</a></button>
         </div>
       </div>
       <div class="screeshot-system">
-        <div>
-          <img src="./assets/images/screenshot-system.png" alt="">
+        <img src="./assets/images/screenshot-system.png" alt="" />
+      </div>
+      </div>
+    </main>
+    <footer>
+      <div class="content-footer">
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><h3>Institucional</h3></li>
+            <li><a href="">A cecodeLAB</a></li>
+            <li><a href="">Trabalhe Conosco</a></li>
+            <li><a href="">Agenda ESG</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><h3>Serviços</h3></li>
+            <li><a href="">Gestão de Laboratórios</a></li>
+            <li><a href="">Tecnologia da Informação</a></li>
+            <li><a href="">Webmail</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><h3>Suporte</h3></li>
+            <li>
+              <img
+                class="footer-image"
+                src="assets/icons/icon_help_sac.svg"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    <div class="main-sec">
-      
-    </div>
-    
-  </main>
-
-
-  <footer>
-    <div class="content-footer">
-      <div class="footer-links">
-        <ul class="footer-list">
-          <li><h3>Institucional</h3></li>
-          <li><a href="">A cecodeLAB</a></li>
-          <li><a href="">Trabalhe Conosco</a></li>
-          <li><a href="">Agenda ESG</a></li>
-        </ul>
+      <div class="copyright">
+        &#169; Copyright 2024 cecodeLAB. Todos os direitos reservados.
       </div>
-      <div class="footer-links">
-        <ul class="footer-list">
-          <li><h3>Serviços</h3></li>
-          <li><a href="">Gestão de Laboratórios</a></li>
-          <li><a href="">Tecnologia da Informação</a></li>
-          <li><a href="">Webmail</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <ul class="footer-list">
-          <li><h3>Suporte</h3></li>
-          <li><img class="footer-image" src="assets/icons/icon_help_sac.svg" alt=""></li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright">
-      &#169; Copyright 2024 cecodeLAB. Todos os direitos reservados.
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
