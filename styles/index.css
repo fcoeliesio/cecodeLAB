@@ -322,7 +322,7 @@ footer {
     text-align: center;
     font-size: 12px;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 500;
     line-height: normal;
   }
 
@@ -331,7 +331,7 @@ footer {
     text-align: center;
     font-size: 28px;
     font-style: normal;
-    font-weight: 50;
+    font-weight: 200;
     line-height: normal;
     margin-left: 2px;
   }
@@ -383,7 +383,7 @@ footer {
   .login-btn-mobile button {
     border: none;
     width: 100%;
-    background-color: rgb(84, 188, 202);
+    background-color: #1B71A3;
     padding: 10px 15px;
   }
 
@@ -437,7 +437,6 @@ footer {
 
   .text-sing-up p {
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -456,7 +455,7 @@ footer {
 
 
   .screeshot-system div img {
-    width: 80vh;
+    width: 45vh;
   }
 
   footer {
