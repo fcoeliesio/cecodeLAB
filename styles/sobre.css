@@ -10,8 +10,7 @@ body {
     align-items: center;
   }
 main {
-    width: 98%;
-    margin: 1rem;
+    width: 100%
   }
 header {
     background: #1B71A3;
@@ -231,6 +230,10 @@ footer {
   .imagem_mvv img {
     max-width: 70%;
     min-width: 550px; 
+  }
+  main {
+    width: 98%;
+    margin: 1rem;
   }
 }
 @media (max-width: 767px) {
