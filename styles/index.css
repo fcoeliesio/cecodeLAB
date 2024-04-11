@@ -213,15 +213,15 @@ main {
 }
 
 .signature:hover {
-  scale: 1.01;
+  background: #206186;
 }
 
 .signature p {
   color: #FFF;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 750;
   line-height: normal;
 }
 
@@ -395,6 +395,7 @@ footer {
 
   .info {
     display: block;
+    width: 100%;
     border-radius: 44px;
     background: #F3F7FC;
     margin: 1rem;
