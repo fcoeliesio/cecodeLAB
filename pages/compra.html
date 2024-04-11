@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/compra.css" />
     <script type="module" src="/js/compra/script.js" defer></script>
+    <script src="/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/currencyformatter.js/2.2.0/currencyFormatter.min.js" integrity="sha512-zaNuym1dVrK6sRojJ/9JJlrMIB+8f9IdXGzsBQltqTElXpBHZOKI39OP+bjr8WnrHXZKbJFdOKLpd5RnPd4fdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Adquira agora o nosso produto</title>
   </head>
@@ -12,26 +13,35 @@
     <header>
       <nav class="nav-header">
         <div class="logo">
-          <div class="name-cecode"><a href="index.html">CECODE</a></div>
-          <div class="name-lab"><a href="index.html">LAB</a></div>
+          <div class="name-cecode"><a href="../index.html">CECODE</a></div>
+          <div class="name-lab"><a href="../index.html">LAB</a></div>
         </div>
         <div class="nav-menu">
           <ul>
-            <li class="nav-menu-item">
-              <a href="#" class="menu-link">Página Inicial</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="sobre.html" class="menu-link">Sobre</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="fale-conosco.html" class="menu-link">Fale conosco</a>
-            </li>
+            <li class="nav-menu-item"><a href="../index.html" class="menu-link">Página Inicial</a></li>
+            <li class="nav-menu-item"><a href="sobre.html" class="menu-link">Sobre</a></li>
+            <li class="nav-menu-item"><a href="fale-conosco.html" class="menu-link">Fale conosco</a></li>
           </ul>
         </div>
+  
         <div class="login-btn">
           <button><a href="./pages/login.html">Entrar</a></button>
         </div>
+  
+        <div class="mobile-menu-icon">
+          <button onclick="show_menu()" ><img src="/assets/icons/icon_menu_open.svg" alt="" class="icon"></button>
+        </div>
       </nav>
+      <div class="menu-mobile">
+        <ul>
+          <li class="nav-menu-item"><a href="../index.html" class="menu-link">Página Inicial</a></li>
+          <li class="nav-menu-item"><a href="sobre.html" class="menu-link">Sobre</a></li>
+          <li class="nav-menu-item"><a href="fale-conosco.html" class="menu-link">Fale conosco</a></li>
+        </ul>
+        <div class="login-btn-mobile">
+          <button><a href="login.html">Entrar</a></button>
+        </div>
+      </div>
     </header>
     <main>
       <form class="Help-form" action="#" method="post">
