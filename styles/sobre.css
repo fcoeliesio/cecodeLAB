@@ -10,8 +10,7 @@ body {
     align-items: center;
   }
 main {
-    width: 98%;
-    margin: 1rem;
+    width: 100%
   }
 header {
     background: #1B71A3;
@@ -118,6 +117,7 @@ header {
 }
 .valor ul{
   display: flex;
+  flex-wrap: wrap;
 }
 .valor h3{
   text-align: center;
@@ -218,19 +218,43 @@ footer {
   font-size: 14px;
   padding-bottom: 24px;
 }
+.imagem_laboratorio img,
+.imagem_mvv img,
+.imagem_funcao img,
+.imagem_beneficio img {
+  max-width: 100%;
+  height: auto; 
+}
+@media (min-width: 768px) {
+  .imagem_laboratorio img,
+  .imagem_mvv img {
+    max-width: 70%;
+    min-width: 550px; 
+  }
+  main {
+    width: 98%;
+    margin: 1rem;
+  }
+}
 @media (max-width: 767px) {
+  .content-footer, .copyright{
+    flex-direction: column;
+  }
+  .content-footer {
+    gap: 2.5rem;
+  }
   .sobre {
     flex-direction: column;
   }
   .imagem_laboratorio {
-    margin-top: 1rem;
+    margin: 1rem;
     text-align: center;
   }
   .mvv {
     flex-direction: column;
   }
   .imagem_mvv {
-    margin-top: 1rem;
+    margin: 1rem;
     text-align: center; 
     order: 3;
   }
@@ -238,17 +262,17 @@ footer {
     flex-direction: column;
   }
   .lista-funcao {
-    margin-top: 1rem; 
+    margin-top: 1rem;
   }
   .imagem_funcao {
-    margin-top: 1rem;
+    margin: 1rem;
     text-align: center; 
   }
   .beneficios {
     flex-direction: column;
   }
   .imagem_beneficio {
-    margin-top: 1rem;
+    margin: 1rem;
     text-align: center; 
     order: 3;
   }
