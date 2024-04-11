@@ -1,7 +1,7 @@
 # Sistema WEB
 
 * Projeto (front-end) da disciplina de __Desenvolvimento para WEB__ da Universidade Federal do Cariri (UFCA)
-* Link: __https://fcoeliesio.github.io/cecodeLAB/__
+* Link: https://fcoeliesio.github.io/cecodeLAB/
 
 ## Autores:
 
