@@ -109,6 +109,11 @@ span {
   color: white;
   margin: 24px 0px 24px 0px;
   font-size: 16px;
+  border: 0px;
+}
+
+.button-form:hover {
+  background: var(--Brand-Brand-700, #1f6791);
 }
 
 .user-help {
