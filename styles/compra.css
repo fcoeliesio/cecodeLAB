@@ -173,7 +173,7 @@ h3, h4 {
   margin-right: 0.5rem;
   background-repeat: no-repeat;
   display: inline-block;
-  background-image: url("./assets/icons/check_icon.svg");
+  background-image: url("../assets/icons/check_icon.svg");
 }
 
 .help-data {
