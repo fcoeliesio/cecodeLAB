@@ -323,13 +323,13 @@ h3, h4 {
 }
 
 #users::before{
-  background-image: url("/assets/icons/icon_user.svg");
+  background-image: url("../assets/icons/icon_user.svg");
 }
 #data-storage::before {
-  background-image: url("/assets/icons/icon_storage.svg");
+  background-image: url("../assets/icons/icon_storage.svg");
 }
 #assets-storage::before {
-  background-image: url("/assets/icons/icon-image-asset.svg");
+  background-image: url("../assets/icons/icon-image-asset.svg");
 }
 
 #plans,
